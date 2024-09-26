@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0;
+    background-color: #fef7f3;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 60px 20px 0 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: Open Sens;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 54.47px;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;    
+    margin-bottom: 40px;
+}
+
+.flex-item {
+    width: 100%;
+}
+
+.flex-item svg {
+    width: 375px;
+    height: 288px;
+    margin-bottom: 20px;
+}
+
+.flex-item h3 {
+    margin: 0;
+    text-align: left;
+    padding-left: 45px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40.85px;
+}
+
+.flex-item span {
+    margin: 0;
+    text-align: left;
+    color: #F09502;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40.85px;
+}
+
+.flex-item p {
+    margin: 0;
+    padding-left: 38px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;    
+}
+
+
+.integration {
+    display: flex;
+    position: relative;
+    padding: 34px 30px 0 37px;
+    background-color: #fff;
+    text-align: left;
+    border-radius: 8px;
+}
+
+.integration-left {
+    width: 50%;
+}
+
+.integration-right {
+    width: 50%;
+}
+
+.integration-right::after {
+    content: '';
+    position: absolute;
+    top: 29px;
+    left: -110px;
+    width: 155%;
+    height: 77%;
+    background-image: url(/img/svg/Ellipse.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.integration h2 {
+    margin-bottom: 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 54.47px;    
+    color: #000;
+}
+
+.integration p {
+    margin: 0;
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.integration-right-top-icons {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 23px;
+    padding-left: 101px;
+    gap: 75px;
+    position: relative;
+    z-index: 2;
+}
+
+.integration-right-top-icons svg {
+    width: 12%;
+}
+
+.integration-right-bot-icons {
+    display: flex;
+    padding-left: 179px;
+    transform: translateY(-50px);
+    gap: 92px;
+    position: relative;
+    z-index: 2;
+}
+
+.integration-right-bot-icons svg {
+    width: 14%;
+}
+
