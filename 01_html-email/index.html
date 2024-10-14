@@ -1,0 +1,559 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>HTML Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style>
+		body {
+			width: 100% !important;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			margin: 0;
+			padding: 0;
+			line-height: 100%;
+		}
+
+		[style*="Open Sans"] {font-family: 'Open Sans', arial, sans-serif !important;}
+
+		img {
+			outline: none;
+			text-decoration: none;
+			border:none;
+			-ms-interpolation-mode: bicubic;
+			max-width: 100%!important;
+			margin: 0;
+			padding: 0;
+			display: block;
+		}
+    
+		table td {
+			border-collapse: collapse;
+		}
+    
+		table {
+			border-collapse: collapse;
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+
+        .logo {
+            padding-top: 30px;
+			padding-bottom: 28px;
+		}
+    
+		.title {
+			margin: 0;
+            margin-bottom: 13px;
+            font-family: Arial;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: left;            
+		}
+
+        .descr {
+			margin: 0;            
+            font-family: Arial;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+		}
+
+        .mini-title {
+            margin: 0;
+            font-family: Arial;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        .card-title {
+            margin: 0;
+            font-family: Arial;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        .mini-descr {
+            margin: 0;
+            font-family: Arial;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            text-align: left;
+            color: #ffffff;
+            padding-right: 10px;
+        }
+
+        .more-descr {
+            margin: 0;
+            font-family: Arial;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            text-align: left;
+            color: #ffffff;
+            padding-right: 10px;
+        }
+
+        .more-col-3 {
+            width: 33.33%;
+        }
+
+        .button {
+            display: inline-block;
+            text-align: center; 
+            text-decoration: none; 
+            width: 240px; 
+            height: 45px; 
+            border-radius: 48px; 
+            font-size: 14px; color: #FFFFFF; 
+            background-color: #9D5CD0; 
+            font-weight: 700;
+            line-height: 45px; 
+		}
+
+		.button a {
+			color: #FFFFFF;
+			width: 100%;
+			height: 100%;
+			text-decoration: none;
+		}
+
+        .link {
+            font-family: Arial;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #757575;
+            text-align: center;
+            text-decoration: none;
+		}
+
+        .out-links {
+            font-family: Arial;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        
+        .padding-button {
+            padding-top: 44px;
+            padding-bottom: 30px;
+        }
+        
+        .center {
+			padding-top: 32px;
+			padding-bottom: 32px;
+		}
+
+        .mini-title-pb-21 {
+            padding-bottom: 21px;
+        }
+        
+        .pt-10 {
+			padding-top: 10px;
+		}
+
+        .pt-21 {
+			padding-top: 21px;
+		}
+    
+        .pt-26 {
+			padding-top: 26px;
+		}
+
+        .pt-32 {
+			padding-top: 32px;
+		}
+
+        .pb-6 {
+			padding-bottom: 6px;
+		}
+
+        .pb-8 {
+			padding-bottom: 8px;
+		}
+
+        .pb-11 {
+			padding-bottom: 11px;
+		}
+
+        .pb-21 {
+			padding-bottom: 21px;
+		}
+
+        .pb-29 {
+			padding-bottom: 29px;
+		}
+
+        .pb-38 {
+			padding-bottom: 38px;
+		}
+
+		
+
+        @media (max-width: 620px) {
+
+            .top.table-600 {
+            width: 100% !important;
+            }
+
+            .more-col-3 {
+                padding-top: 10px;
+                display: block;
+                width: 100% !important;
+            }
+
+            .logo {
+                padding-top: 17px;
+                padding-bottom: 17px;
+            }
+            .logo img {
+                width: 48%;
+		    }
+
+            .hero img {
+                content: url('https://s.iimg.su/s/22/TbswbtsdxTGOIcVI2H0b8GPCixEgcJutjiNfH2as.png');
+                object-fit: cover; 
+            }
+
+            .more-descr {
+                padding-top: 22px;
+            }
+
+			.table-600 {
+				width: 280px !important;
+			}
+
+			.table-520 {
+				width: 244px !important;
+			}
+
+			.table-250,
+			.table-240 {
+				width: 240px !important;
+			}
+
+			.mobile-top,
+			.mobile-bottom {
+				display: block !important;
+			}
+
+			.mobile-bottom {
+				padding-left: 0;
+				padding-right: 0;
+				padding-bottom: 0;
+				padding-top: 16px;
+			}
+
+            .mini-descr {
+                padding-top: 5px;
+            }
+
+            .pb-38 {
+                padding-bottom: 33px;
+            }
+
+            .pb-21 {
+                padding-bottom: 16px;
+            }
+
+            .pb-6 {
+                padding-bottom: 3px;
+            }
+		}
+	</style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+    <div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Тестовое
+		письмо</div>
+        <table cellpadding="0" cellspacing="0" class="table-600" width="600" bgcolor="#ffffff" align="center">
+            <tr>
+                <td>
+                    <table class="top table-600" cellpadding="0" cellspacong="0" width="600" bgcolor="#000000">
+                        <tr>
+                            <td align="center">
+                                <table width="520" class="table-520" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="logo" align="center">
+                                            <img src="https://s.iimg.su/s/11/UdzZLlRsBKhdARILDWc7nG39i3FZww1voMuYKN22.png" alt="Логотип" >                                        
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="top table-600" cellpadding="0" cellspacong="0" width="600" bgcolor="#000000">
+                        <tr>
+                            <td align="center" class="hero">
+                                <img src="https://s.iimg.su/s/11/XZMhF9YT0CouvIvrQwFaX6FiiIw2ADvqKn4XLbpb.jpg" alt="" >
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="top table-600" cellpadding="0" cellspacong="0" width="600" bgcolor="#FFFFFF">
+                        <tr>
+                            <td align="center" class="pt-32 pb-38" >
+                                <table class="top table-520" cellpadding="0" cellspacong="0" width="520" bgcolor="#FFFFFF">
+                                    <tr>
+                                        <td align="center" >
+                                            <h1 class="title">
+                                                Торжество импрессионизма
+                                            </h1>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="descr">
+                                                Опыт говорит нам, что семантический разбор внешних 
+                                                противодействий требует анализа новых принципов формирования 
+                                                материально-технической и&nbsp;кадровой базы.   
+                                            </p>
+                                            <p class="descr pt-10">
+                                                Задача организации, в&nbsp;особенности&nbsp;же внедрение 
+                                                современных методик, в&nbsp;своём классическом представлении, 
+                                                допускает внедрение глубокомысленных рассуждений. Есть над чем 
+                                                задуматься: элементы политического процесса преданы 
+                                                социально-демократической анафеме! Но&nbsp;интерактивные 
+                                                прототипы заблокированы в&nbsp;рамках своих собственных 
+                                                рациональных ограничений. Сторонники тоталитаризма в&nbsp;науке 
+                                                ограничены исключительно образом мышления.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="top table-600" cellpadding="0" cellspacong="0" width="600" bgcolor="#000000">
+                        <tr>
+                            <td align="center">
+                                <table class="top table-520" cellpadding="0" cellspacong="0" width="520" bgcolor="#000000">
+                                    <tr>
+                                        <td align="center" class="pt-21">
+                                            <h1 class="mini-title mini-title-pb-21">
+                                                Представленные художники
+                                                
+                                            </h1>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" class="padding-card-21 pb-21">
+                                            <img src="https://s.iimg.su/s/12/DZjB7FSrYoCz2HcjR7Se6IhqZvlk6VwLZ6X3Cqoq.png">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="card-title pb-6">
+                                            Поль Гоген
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mini-descr pb-21">
+                                            Прежде всего, разбавленное изрядной долей эмпатии, 
+                                            рациональное мышление в&nbsp;значительной степени 
+                                            обусловливает важность укрепления моральных ценностей.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" class="padding-card-21 pb-21">
+                                            <img src="https://s.iimg.su/s/12/k49jrdLNbkrMREiFIxwtt1U6fAeKrpBQsJFImM04.png">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="card-title pb-6">
+                                            Огюст Ренуар
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mini-descr pb-21">
+                                            А&nbsp;также сделанные на&nbsp;базе интернет&#8209;аналитики выводы освещают чрезвычайно 
+                                            интересные особенности картины в&nbsp;целом.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" class="padding-card-21 pb-21">
+                                            <img src="https://s.iimg.su/s/12/o9wgQSR3KAEmCB9kKnSxaeYtahzOP2wQow54rgZw.png">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="card-title pb-6">
+                                            Клод Моне
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mini-descr pb-21">
+                                            Современная методология разработки однозначно 
+                                            фиксирует необходимость системы массового участия.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td align="center" class="padding-card-21 pb-21">
+                                            <img src="https://s.iimg.su/s/13/LwWFtOLgCMsAUb2QqWFwYWXvYBmETLKLEW52mVbC.png"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="card-title pb-6">
+                                            Эдуард Мане
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mini-descr pb-21">
+                                            Но&nbsp;социально-экономическое развитие является 
+                                            качественно новой ступенью вывода текущих активов.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td align="center" class="padding-card-21 pb-21">
+                                            <img src="https://s.iimg.su/s/13/lUmOvKg9bygYaoKt6KK0ejCQyNtNWQr1VnghavJC.jpg"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="card-title pb-6">
+                                            Винсент Ван Гог
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mini-descr pb-29">
+                                            Повседневная практика показывает, что разбавленное 
+                                            изрядной долей эмпатии, рациональное мышление 
+                                            требует анализа поставленных обществом задач.
+                                        </td>
+                                    </tr>                                    
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="top table-600" width="600" cellpadding="0" cellspacong="0" bgcolor="#FFFFFF">
+                        <tr>
+                            <td align="center">
+                                <table class="top table-520" width="520" cellpadding="0" cellspacong="0">
+                                    <tr>
+                                        <td align="left" class="pt-26 more-title" >
+                                            <p class="mini-title pb-6" style="color: #515151;" >
+                                                И это ещё не всё!
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="more-col-3">
+                                            <img src="https://s.iimg.su/s/14/SlPytiJR5cE2b1k3U3fRhI8k6cEqoM85R4kIZ0eh.png">
+                                            <p class="more-descr" style="color: #000000;">
+                                                Уникальные подборки<br>работ с авторскими рекомендациями
+                                            </p>
+                                        </td>
+                                        <td class="more-col-3">
+                                            <img src="https://s.iimg.su/s/14/qwGG8UFbzxTCgNjEXUYsp3j56pFdKPAEWLYTc5H4.png">
+                                            <p class="more-descr" style="color: #000000;">
+                                                Возможность настроить<br>нашу рассылку под свой личный вкус
+                                            </p>
+                                        </td>
+                                        <td class="more-col-3">
+                                            <img src="https://s.iimg.su/s/14/IHnUWD0TY2homXK91L32Tson4VzBwfHr1igYNH7R.png">
+                                            <p class="more-descr" style="color: #000000;">
+                                                У&nbsp;вас есть пожелания и&nbsp;предложения? <br>
+                                                Напишите нам в&nbsp;ответ на&nbsp;это письмо!
+                                            </p>
+                                        </td>
+                                    </tr>                                                             
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" class="padding-button" >
+                                <table  width="100%" cellpadding="0" cellspacing="0">
+                                    <tr align="center">
+                                        <td class="button" align="center">
+                                            <a href="#">Узнать все подробности</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>    
+                            <td>
+                                <table class="table-600" cellpadding="0" cellspacing="0" width="600" bgcolor="#00000">
+                                    <tr>
+                                        <td class="pt-32" align="center">
+                                            <table width="250" class="table-250" cellpadding="0" cellspacing="0" width="600">
+                                                <tr>
+                                                    <td align="center">
+                                                        <table width="146" cellpadding="0" cellspacing="0" width="600">
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <a href="#" >
+                                                                        <img src="https://s.iimg.su/s/17/2fB1Bupx5YYhIRAqAeIVuI9YdImmcdGtMglYNi1a.png">
+                                                                    </a>
+                                                                </td>
+                                                                <td align="center">
+                                                                    <a href="#" >
+                                                                        <img src="https://s.iimg.su/s/17/zviue3lJ6cWX5EX2GPSONH6bIlovHzzNfrL8hKnZ.png">
+                                                                    </a>
+                                                                </td>
+                                                                <td align="right">
+                                                                    <a href="#" >
+                                                                        <img src="https://s.iimg.su/s/17/ZxcyyqoqqHPoB4jiJ25rDEFueaOOVPROUuSSEM35.png">
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>										
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" class="pb-8">
+                                                        <a href="" class="link">
+                                                            Blanchard © 2020 / Все права защищены
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <p class="out-links" style="margin: 0;">
+                                    Вы можете так же 
+                                    <a href="#">
+                                        отписаться от рассылки
+                                    </a>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+</body>
+</html>
+
+
