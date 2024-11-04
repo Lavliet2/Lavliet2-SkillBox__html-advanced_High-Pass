@@ -1,0 +1,93 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as mixin;
+
+.contacts {
+    @include mixin.section-spacing($section-spacing-large);
+
+    &__title {
+        // margin-bottom: -9px;
+    }
+
+    &__container {
+        row-gap: 22px;
+    }
+
+    &__map {
+        color: $color-text-primary;
+        background-image: url("../images/map.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+
+        &-container {
+            height: 100%;
+        }
+        &-content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // align-items: center;
+            padding-left: 60px;
+            padding-right: 50px;
+            height: 100%;
+            background-color: rgba(32, 32, 32, 0.85);
+        }
+
+        &-title {
+            // margin: auto;
+            grid-column: 2 / 6;
+            margin-bottom: 10px;
+        }
+
+        &-desc {
+            grid-row: 2;
+            grid-column: 2 / 7;
+            color: #CACACA;
+        }
+
+        &-phone{
+            grid-row: 3;
+            grid-column: 2 / 6;
+            svg {
+                transform: translateY(4px);
+                fill: #fff; /* Наследует цвет от ссылки */
+                transition: fill 0.3s ease-in-out;
+            }
+        }
+    }
+
+    &__form {
+        &-title {
+            // margin-bottom: 5px;
+        }
+        &-desc {
+            line-height: 22px;
+            margin-bottom: 10px;
+            color:#999999;
+        }
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    // color: #999999;
+
+    &__input {
+        padding: 15px 23px;
+        background-color: #E9E9E9;
+        border: none;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    &__textarea-mail {
+        padding: 15px 23px;
+        background-color: #E9E9E9;
+        border: none;
+        min-height: 118px;
+        transition: background-color 0.3s ease-in-out;
+    }
+}

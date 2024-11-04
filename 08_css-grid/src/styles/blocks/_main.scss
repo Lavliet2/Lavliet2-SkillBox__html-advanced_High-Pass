@@ -1,0 +1,152 @@
+
+@use '../abstracts/variables' as *;
+
+
+body {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    @media (max-width: 750px) {
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;  
+}
+
+p, input, h1, h2, h3, h4, h6, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+h1  {
+    font-family: TT Firs Neue;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.44px;
+    text-align: left;
+    @media (max-width: 1400px) {
+        font-size: 34px;
+        line-height: 34px;
+    }
+    @media (max-width: 992px) {
+        line-height: 30.06px;
+    }
+    @media (max-width: 750px) {
+        font-size: 24px;
+        line-height: 26.4px;
+    }
+}
+
+h2 {
+    font-family: TT Firs Neue;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30.96px;
+    text-align: left;
+    @media (max-width: 1400px) {
+        line-height: 24.96px;
+    }
+    @media (max-width: 992px) {
+        font-size: 24px;
+        line-height: 30.96px;
+    }
+    @media (max-width: 750px) {
+        font-size: 18px;
+        line-height: 18.72px;        
+    }
+}
+
+h3 {
+    font-family: TT Firs Neue;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;   
+    @media (max-width: 750px) {
+        font-size: 16px;
+        line-height: 22px;        
+    }     
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+  
+.btn {
+    padding: 15.5px 22px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    width: max-content;
+    color: $color-text-primary;
+    background-color: $color-primary;
+    transition: background-color 0.3s ease-in-out;
+    &:focus {
+        outline: 3px solid $color-active;
+    }
+    &:hover {
+        background-color: $color-hover;
+    }            
+    &:active {
+        background-color: $color-active;
+    }
+    @media (max-width: 750px) {
+        padding: 12px 22px;
+        font-size: 14px;
+        line-height: 16.41px;
+    }
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 0px 8px;
+    background-color: #999999;
+    color: $color-background-light;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+    &:hover, &:focus {
+        background-color: $color-hover;
+        color: $color-background-light;
+        outline: none;
+    }
+}
+
+
+.link {
+    font-family: TT Firs Neue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.64px;
+    color: $color-primary;
+    transition: color 0.3s ease-in-out;        
+    &:hover, &:focus {
+        color: $color-hover;
+        outline: none;
+    }
+    &:active {
+        color: $color-active;
+    }
+}
+
+
+
