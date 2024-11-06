@@ -1,9 +1,9 @@
 @use 'base/normalize';
+@use 'blocks/main';
 @use 'abstracts/grid';
 @use 'abstracts/variables';
 @use 'abstracts/mixins';
 @use 'blocks/header'; 
-@use 'blocks/main';
 @use 'blocks/hero';
 @use 'blocks/about';
 @use 'blocks/projects';

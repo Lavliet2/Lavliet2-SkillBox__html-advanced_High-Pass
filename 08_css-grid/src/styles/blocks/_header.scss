@@ -18,6 +18,9 @@
         height: 3px;
         background-color: $color-text-primary;
         transition: all 0.3s ease;
+        &:last-child {
+          width: 12px;
+        }
     }
   }
 
@@ -28,9 +31,6 @@
   &__nav {
     position: relative;
     z-index: 1;
-  }
-
-  &__logo-img {
   }
 
   &__nav-list {
@@ -83,9 +83,6 @@
   }
 
   @media (max-width: 1400px) { 
-      &__logo-img {
-        // width: 77%;
-      }
       &__nav-list {
         gap:33px
       }
@@ -138,13 +135,20 @@
     }
     &__nav-list {
       display: none;
-      grid-column: 2; // Скрыть меню по умолчанию
+      grid-column: 2;
     }
     &__burger {
       grid-row: 2;
       grid-column: 1;
-      display: flex; // Показать бургер
+      display: flex;
       z-index: 1;
     }
   }
+  @media (max-width: 330px) {
+    &__nav {
+      &::before {
+        width: calc(100vw + 10px);
+      }
+  }
+}
 }

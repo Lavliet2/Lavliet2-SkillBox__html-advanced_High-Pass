@@ -21,10 +21,6 @@
     &__left {
       grid-column: 1 / span 6;
       align-self: start;
-    
-
-      &-description {
-      }
     }
   
     &__right {
@@ -87,11 +83,6 @@
     @media (max-width: 750px) {
       @include mixin.section-spacing($section-spacing-default);
       padding: 34px 0 55px 0;
-      &__container {
-        // row-gap: 18px;
-        // grid-template-columns: 1fr;
-        // grid-template-rows: auto auto auto;
-      }
       &__title {
         grid-column: 1 / span 12;
       }
@@ -102,9 +93,7 @@
       }
       &__right {
         grid-column: 1 / span 10;
-        // padding-right: 21px;
         img {
-          // width: 50%;
           min-width: 278px;
           min-height: 278px;
           margin-bottom: 17px;

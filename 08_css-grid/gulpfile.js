@@ -51,7 +51,7 @@ const fonts = () => {
 };
 
 const images = () => {
-    return src('src/images/**/*.{png,jpg,jpeg,gif,svg}')
+    return src('src/images/**/*.{webp,png,jpg,jpeg,gif,svg}')
         .pipe(copy(`${dist}/images`, { prefix: 2 })); // Копирование с опцией префикса для корректного пути
 };
 
