@@ -18,6 +18,7 @@ import { hideBin } from 'yargs/helpers';
 import yargs from 'yargs/yargs'; 
 import through2 from 'through2';
 import copy from 'gulp-copy';
+import path from 'path';
 
 
 const { src, dest, series, parallel, watch } = gulp;
@@ -105,8 +106,8 @@ const svgSprites = () => {
 
 const scripts = () => {
     return src([
-        'src/js/components/**/*.js',
-        'src/js/main.js'
+        path.resolve('src/js/components/**/*.js'),
+        path.resolve('src/js/main.js')
     ])
         .pipe(!isProd ? sourcemaps.init() : noop())
         .pipe(babel({
