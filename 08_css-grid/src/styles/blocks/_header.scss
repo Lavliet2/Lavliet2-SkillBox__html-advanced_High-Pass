@@ -144,11 +144,40 @@
       z-index: 1;
     }
   }
-  @media (max-width: 330px) {
+  @media (max-width: 328px) {
     &__nav {
       &::before {
-        width: calc(100vw + 10px);
+        width: calc(100vw + 2px);
       }
+    }
   }
-}
+  @media (max-width: 326px) {
+    &__nav {
+      &::before {
+        width: calc(100vw + 4px);
+      }
+    }
+  }
+  @media (max-width: 324px) {
+    &__nav {
+      &::before {
+        width: calc(100vw + 6px);
+      }
+    }
+  }
+  @media (max-width: 322px) {
+    &__nav {
+      &::before {
+        width: calc(100vw + 8px);
+      }
+    }
+  }  
+  @media (max-width: 320px) {
+    &__nav {
+     &::before {
+       width: calc(100vw + 10px);
+     }
+  }
+  }
+
 }

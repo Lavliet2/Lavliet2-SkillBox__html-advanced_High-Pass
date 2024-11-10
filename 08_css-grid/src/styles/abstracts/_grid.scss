@@ -5,15 +5,15 @@
     min-height: 100vh; 
     
     .header {
-      grid-row: 1; /* Хедер занимает первую строку */
+      grid-row: 1;
     }
   
     .main {
-      grid-row: 2; /* Главный контент занимает вторую строку */
+      grid-row: 2;
     }
   
     .footer {
-      grid-row: 3; /* Футер занимает последнюю строку */
+      grid-row: 3;
     }
   }
   
@@ -44,7 +44,8 @@
     @media (max-width: 450px) {
       max-width: 320px;
     }
-    @media (max-width: 390px) {
+    @media (max-width: 350px) {
+      // margin: 0 21px;
       max-width: 278px;
     }
     

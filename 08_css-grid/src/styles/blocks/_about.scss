@@ -110,5 +110,13 @@
         }
       }
     }
+    @media (max-width: 450px) {
+      &__container {
+        column-gap: 0;
+      }
+      &__left {
+        padding-right: 0px;
+      }
+    }
   }
   
