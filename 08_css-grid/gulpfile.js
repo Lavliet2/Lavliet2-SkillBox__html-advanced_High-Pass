@@ -3,8 +3,6 @@ import concat from 'gulp-concat';
 import htmlclean from 'gulp-htmlclean';
 import autoprefixer from 'gulp-autoprefixer';
 import cleanCSS from 'gulp-clean-css';
-// import dartSass from 'gulp-dart-sass';
-// import * as dartSass from 'sass';
 import * as sass from 'sass'
 import gulpSass from 'gulp-sass';
 import svgSprite from 'gulp-svg-sprite';
@@ -24,7 +22,6 @@ import path from 'path';
 const { src, dest, series, parallel, watch } = gulp;
 
 const argv = yargs(hideBin(process.argv)).argv;
-// const sass = gulpSass(dartSass);
 const sassCompiler = gulpSass(sass);
 const isProd = argv.prod;
 const dist = isProd ? 'build' : 'dev';
@@ -37,14 +34,6 @@ const resources = () => {
     return src('src/resources/**')
         .pipe(dest(dist));
 };
-
-// const images = () => {
-//     return src('src/images/**/*')
-//         .pipe(dest(dist + '/images'))
-//         .on('data', function(file) {
-//             console.log('Копируется файл:', file.path); // Выводим каждый файл
-//         });
-// };
 
 const fonts = () => {
     return src('src/fonts/**/*.{woff,woff2}') // Путь к шрифтам
@@ -70,19 +59,6 @@ const scss = () => {
         .pipe(dest(dist)) // Путь для сохранения результата
         .pipe(browserSync.stream());
 };
-
-// const styles = () => {
-//     return src('src/styles/**/*.css')
-//         .pipe(!isProd ? sourcemaps.init() : noop())
-//         .pipe(concat('main.css'))
-//         .pipe(autoprefixer({
-//             cascade: false
-//         }))
-//         .pipe(isProd ? cleanCSS({ level: 2 }) : noop())
-//         .pipe(!isProd ? sourcemaps.write() : noop())
-//         .pipe(dest(dist))
-//         .pipe(browserSync.stream());
-// };
 
 const htmlMinify = () => {
     return src('src/**/*.html')
@@ -129,14 +105,12 @@ const watchFiles = () => {
     });
 };
 
-// watch('src/styles/**/*.css', styles);
 watch('src/resources/**', resources);
 watch('src/**/*.html', htmlMinify);
 watch('src/styles/**/*.scss', scss);
 watch('src/images/svg/**/*.svg', svgSprites);
 watch('src/js/**/*.js', resources);
 
-// export const stylesTask = styles;
 export const runClean = clean;
 export const runResources = resources;
 export const runHtmlMinify = htmlMinify;
@@ -145,8 +119,3 @@ export const runImages = images;
 export const runScripts = scripts;
 
 export const build = series(clean, resources, images, fonts, htmlMinify, scss, svgSprites, scripts, watchFiles);
-// export const build = series(clean, resources, htmlMinify, styles, svgSprites,  scripts, watchFiles);
-// export const prod = series(clean, parallel(htmlMinify, styles, svgSprites, scripts));
-
-// export const defaultTask = series(clean, resources, htmlMinify, styles, svgSprites, images, scripts, watchFiles);
-// export const buildTask = series(clean, parallel(htmlMinify, styles, svgSprites, images, scripts));
